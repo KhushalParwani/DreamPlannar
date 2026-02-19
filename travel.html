@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Travel - Dream Travel</title>
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+  <header class="page-header">
+    <a href="web.html" class="brand">← Back</a>
+    <h1>Travel & Packages</h1>
+  </header>
+
+  <section class="travel-hero">
+    <div class="hero-content">
+      <h2>Discover Your Next Adventure</h2>
+      <p>Explore curated travel deals, flight offers, and holiday packages tailored for unforgettable experiences.</p>
+      <div class="search-bar">
+        <input type="text" id="destination-search" placeholder="Where do you want to go?">
+        <button id="search-btn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="filters">
+    <button class="filter-btn active" data-filter="all">All Packages</button>
+    <button class="filter-btn" data-filter="beach">Beach</button>
+    <button class="filter-btn" data-filter="mountain">Mountain</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="cultural">Cultural</button>
+  </section>
+
+  <section class="package-grid">
+    <!-- 10 travel packages -->
+    <article class="package-card" data-name="Golden Triangle Tour" data-category="cultural">
+      <img src="Images/tajmahal.jpg" alt="Taj Mahal">
+      <div class="pkg-info">
+        <h3>Golden Triangle</h3>
+        <p>Delhi → Agra → Jaipur • 4 nights</p>
+        <div class="rating">★★★★☆</div>
+      </div>
+      <div class="pkg-meta">
+        <span class="price">From ₹7,499</span>
+        <button class="book-now">Book Now</button>
+      </div>
+    </article>
+
+    <article class="package-card" data-name="7 Wonders Short Tour" data-category="cultural">
+      <img src="Images/7wonders.jpg" alt="7 Wonders">
+      <div class="pkg-info">
+        <h3>7 Wonders Short</h3>
+        <p>Highlights of world wonders • 6 nights</p>
+        <div class="rating">★★★★★</div>
+      </div>
+      <div class="pkg-meta">
+        <span class="price">From ₹18,999</span>
+        <button class="book-now">Book Now</button>
+      </div>
+    </article>
+
+    <article class="package-card" data-name="Taj Weekend" data-category="cultural">
+      <img src="Images/tajmahal.jpg" alt="Taj Mahal">
+      <div class="pkg-info">
+        <h3>Taj Weekend</h3>
+        <p>Romantic short break • 2 nights</p>
+        <div class="rating">★★★★☆</div>
+      </div>
+      <div class="pkg-meta">
+        <span class="price">From ₹3,999</span>
+        <button class="book-now">Book Now</button>
+      </div>
+    </article>
+
+    <article class="package-card" data-name="Beach Escape Goa" data-category="beach">
+      <img src="Images/goa.jpeg" alt="Goa beach">
+      <div class="pkg-info">
+        <h3>Beach Escape</h3>
+        <p>Goa beaches • 3 nights</p>
+        <div class="rating">★★★★☆</div>
+      </div>
+      <div class="pkg-meta">
+        <span class="price">From ₹5,499</span>
+        <button class="book-now">Book Now</button>
+      </div>
+    </article>
+
+    <article class="package-card" data-name="Himalayan Retreat" data-category="mountain">
+      <img src="Images/hyderabad.jpg" alt="mountain view">
+      <div class="pkg-info">
+        <h3>Himalayan Retreat</h3>
+        <p>Hill stations & trekking • 5 nights</p>
+        <div class="rating">★★★★★</div>
+      </div>
+      <div class="pkg-meta">
+        <span class="price">From ₹10,999</span>
+        <button class="book-now">Book Now</button>
+      </div>
+    </article>
+
+    <article class="package-card" data-name="City Break Mumbai" data-category="city">
+      <img src="Images/mumbai.jpg" alt="Mumbai skyline">
+      <div class="pkg-info">
+        <h3>City Break</h3>
+        <p>Explore the city • 2 nights</p>
+        <div class="rating">★★★★☆</div>
+      </div>
+      <div class="pkg-meta">
+        <span class="price">From ₹4,299</span>
+        <button class="book-now">Book Now</button>
+      </div>
+    </article>
+
+    <article class="package-card" data-name="Desert Camping" data-category="cultural">
+      <img src="Images/petra.jpg" alt="desert">
+      <div class="pkg-info">
+        <h3>Desert Camping</h3>
+        <p>Rajasthan nights • camp stays</p>
+        <div class="rating">★★★★☆</div>
+      </div>
+      <div class="pkg-meta">
+        <span class="price">From ₹6,499</span>
+        <button class="book-now">Book Now</button>
+      </div>
+    </article>
+
+    <article class="package-card" data-name="Cultural Kerala" data-category="cultural">
+      <img src="Images/Colosseum.jpg" alt="Backwaters">
+      <div class="pkg-info">
+        <h3>Cultural Kerala</h3>
+        <p>Backwaters & spice tours</p>
+        <div class="rating">★★★★★</div>
+      </div>
+      <div class="pkg-meta">
+        <span class="price">From ₹8,199</span>
+        <button class="book-now">Book Now</button>
+      </div>
+    </article>
+
+    <article class="package-card" data-name="Weekend Pune" data-category="city">
+      <img src="Images/Pune.webp" alt="Pune">
+      <div class="pkg-info">
+        <h3>Weekend Pune</h3>
+        <p>Quick city getaway</p>
+        <div class="rating">★★★★☆</div>
+      </div>
+      <div class="pkg-meta">
+        <span class="price">From ₹2,999</span>
+        <button class="book-now">Book Now</button>
+      </div>
+    </article>
+
+    <article class="package-card" data-name="Adventure Chichen" data-category="cultural">
+      <img src="Images/Chichen_itza.jpg" alt="Chichen Itza">
+      <div class="pkg-info">
+        <h3>Adventure Trip</h3>
+        <p>Offbeat & adventure tours</p>
+        <div class="rating">★★★★★</div>
+      </div>
+      <div class="pkg-meta">
+        <span class="price">From ₹12,499</span>
+        <button class="book-now">Book Now</button>
+      </div>
+    </article>
+  </section>
+
+  <script src="travel.js"></script>
+</body>
+</html>

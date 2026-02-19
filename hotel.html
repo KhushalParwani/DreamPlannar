@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels - Dream Travel</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="web.html" class="brand">← Back</a>
+        <h1>Find Your Perfect Stay</h1>
+    </header>
+
+    <section class="hotel-hero">
+        <div class="hero-content">
+            <h2>Luxury & Comfort Await</h2>
+            <p>Discover amazing hotels and accommodations for your perfect getaway.</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <span class="icon">🏨</span>
+                    <span>1000+ Hotels</span>
+                </div>
+                <div class="feature">
+                    <span class="icon">⭐</span>
+                    <span>Best Prices</span>
+                </div>
+                <div class="feature">
+                    <span class="icon">🛡️</span>
+                    <span>Secure Booking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <form action="#" class="hotel-form" role="search" aria-label="Search hotels">
+        <div class="hotel-inp">
+            <label for="hotel-search" class="sr-only">Search hotels</label>
+            <input id="hotel-search" name="q" type="search" placeholder="Search hotels, city or landmark" class="hotel-search-input">
+
+            <div class="trav-date">
+                <div class="date-group">
+                    <label for="check-in">Check-in</label>
+                    <input type="date" id="check-in" name="checkin">
+                </div>
+                <div class="date-group">
+                    <label for="check-out">Check-out</label>
+                    <input type="date" id="check-out" name="checkout">
+                </div>
+                <div class="guests-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5+ Guests</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button class="hotel-btn" type="submit">Search Hotels</button>
+    </form>
+
+    <section class="filters">
+        <button class="filter-btn active" data-filter="all">All Hotels</button>
+        <button class="filter-btn" data-filter="luxury">Luxury</button>
+        <button class="filter-btn" data-filter="budget">Budget</button>
+        <button class="filter-btn" data-filter="resort">Resort</button>
+        <button class="filter-btn" data-filter="boutique">Boutique</button>
+    </section>
+
+    <section class="outer-container" id="hotels-list">
+        <!-- Enhanced hotel cards -->
+        <article class="hotel-card" data-name="Seaside Resort" data-category="resort">
+            <img src="./Images/hotel.jpg" alt="Seaside Resort" class="hotel-img">
+            <div class="hotel-content">
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Seaside Resort</h3>
+                    <p class="hotel-desc">Ocean view • Free breakfast • Spa</p>
+                    <div class="amenities">
+                        <span class="amenity">🌊 Beach</span>
+                        <span class="amenity">🍽️ Breakfast</span>
+                        <span class="amenity">🏊 Pool</span>
+                    </div>
+                </div>
+                <div class="hotel-meta">
+                    <div class="rating-price">
+                        <span class="rating">4.6 ★</span>
+                        <span class="price">₹4,299/night</span>
+                    </div>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="hotel-card" data-name="City Center Inn" data-category="boutique">
+            <img src="./Images/hotel.jpg" alt="City Center Inn" class="hotel-img">
+            <div class="hotel-content">
+                <div class="hotel-info">
+                    <h3 class="hotel-name">City Center Inn</h3>
+                    <p class="hotel-desc">Central location • Free Wi‑Fi • Gym</p>
+                    <div class="amenities">
+                        <span class="amenity">📍 Central</span>
+                        <span class="amenity">📶 Wi-Fi</span>
+                        <span class="amenity">💪 Gym</span>
+                    </div>
+                </div>
+                <div class="hotel-meta">
+                    <div class="rating-price">
+                        <span class="rating">4.3 ★</span>
+                        <span class="price">₹3,199/night</span>
+                    </div>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="hotel-card" data-name="Mountain View Lodge" data-category="luxury">
+            <img src="./Images/hotel.jpg" alt="Mountain View Lodge" class="hotel-img">
+            <div class="hotel-content">
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Mountain View Lodge</h3>
+                    <p class="hotel-desc">Scenic views • Parking • Restaurant</p>
+                    <div class="amenities">
+                        <span class="amenity">🏔️ Mountains</span>
+                        <span class="amenity">🅿️ Parking</span>
+                        <span class="amenity">🍽️ Restaurant</span>
+                    </div>
+                </div>
+                <div class="hotel-meta">
+                    <div class="rating-price">
+                        <span class="rating">4.8 ★</span>
+                        <span class="price">₹5,299/night</span>
+                    </div>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="hotel-card" data-name="Grand Palace Hotel" data-category="luxury">
+            <img src="./Images/hotel.jpg" alt="Grand Palace Hotel" class="hotel-img">
+            <div class="hotel-content">
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Grand Palace Hotel</h3>
+                    <p class="hotel-desc">Luxury • Spa • Fine dining</p>
+                    <div class="amenities">
+                        <span class="amenity">👑 Luxury</span>
+                        <span class="amenity">💆 Spa</span>
+                        <span class="amenity">🍾 Fine Dining</span>
+                    </div>
+                </div>
+                <div class="hotel-meta">
+                    <div class="rating-price">
+                        <span class="rating">4.9 ★</span>
+                        <span class="price">₹8,499/night</span>
+                    </div>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="hotel-card" data-name="Riverside Suites" data-category="boutique">
+            <img src="./Images/hotel.jpg" alt="Riverside Suites" class="hotel-img">
+            <div class="hotel-content">
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Riverside Suites</h3>
+                    <p class="hotel-desc">River view • Breakfast • Bar</p>
+                    <div class="amenities">
+                        <span class="amenity">🌊 River</span>
+                        <span class="amenity">🍳 Breakfast</span>
+                        <span class="amenity">🍸 Bar</span>
+                    </div>
+                </div>
+                <div class="hotel-meta">
+                    <div class="rating-price">
+                        <span class="rating">4.5 ★</span>
+                        <span class="price">₹3,899/night</span>
+                    </div>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="hotel-card" data-name="Lakeview Retreat" data-category="resort">
+            <img src="./Images/hotel.jpg" alt="Lakeview Retreat" class="hotel-img">
+            <div class="hotel-content">
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Lakeview Retreat</h3>
+                    <p class="hotel-desc">Quiet • Complimentary parking • Garden</p>
+                    <div class="amenities">
+                        <span class="amenity">🏞️ Lake</span>
+                        <span class="amenity">🅿️ Parking</span>
+                        <span class="amenity">🌸 Garden</span>
+                    </div>
+                </div>
+                <div class="hotel-meta">
+                    <div class="rating-price">
+                        <span class="rating">4.4 ★</span>
+                        <span class="price">₹2,999/night</span>
+                    </div>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="hotel-card" data-name="Budget Stay Hostel" data-category="budget">
+            <img src="./Images/hotel.jpg" alt="Budget Stay Hostel" class="hotel-img">
+            <div class="hotel-content">
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Budget Stay Hostel</h3>
+                    <p class="hotel-desc">Affordable • Shared rooms • Common area</p>
+                    <div class="amenities">
+                        <span class="amenity">💰 Budget</span>
+                        <span class="amenity">👥 Shared</span>
+                        <span class="amenity">🛋️ Lounge</span>
+                    </div>
+                </div>
+                <div class="hotel-meta">
+                    <div class="rating-price">
+                        <span class="rating">4.0 ★</span>
+                        <span class="price">₹1,099/night</span>
+                    </div>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="hotel-card" data-name="Heritage Bungalows" data-category="boutique">
+            <img src="./Images/hotel.jpg" alt="Heritage Bungalows" class="hotel-img">
+            <div class="hotel-content">
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Heritage Bungalows</h3>
+                    <p class="hotel-desc">Cozy • Traditional decor • Garden</p>
+                    <div class="amenities">
+                        <span class="amenity">🏛️ Heritage</span>
+                        <span class="amenity">🛋️ Cozy</span>
+                        <span class="amenity">🌺 Garden</span>
+                    </div>
+                </div>
+                <div class="hotel-meta">
+                    <div class="rating-price">
+                        <span class="rating">4.7 ★</span>
+                        <span class="price">₹2,799/night</span>
+                    </div>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Booking modal -->
+    <div id="booking-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-label="Booking dialog">
+            <button class="modal-close" aria-label="Close">✕</button>
+            <h2 id="modal-hotel-name">Book hotel</h2>
+            <p id="modal-hotel-desc"></p>
+            <p class="modal-price" id="modal-hotel-price"></p>
+            <form id="booking-form">
+                <label for="guest-name">Your name</label>
+                <input id="guest-name" name="guest" required>
+                <label for="guest-phone">Phone</label>
+                <input id="guest-phone" name="phone">
+                <label for="guest-email">Email</label>
+                <input id="guest-email" name="email" type="email" required>
+                <div class="modal-actions">
+                    <button type="submit" class="btn primary">Confirm booking</button>
+                    <button type="button" class="btn" id="modal-cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="hotel.js"></script>
+</body>
+</html>

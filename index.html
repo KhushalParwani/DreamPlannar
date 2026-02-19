@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="" class="navbar-brand"><img src="./Images/Dream-TV-Logo-1-3965.png" alt="logo" height="40" width="60"><span class="brand-text">Dream Travel</span></a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul class="navbar-menu">
+          <li class="navbar-item"><a href="#Home" class="navbar-link">Home</a></li>
+          <li class="navbar-item"><a href="#About" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="#Services" class="navbar-link">Services</a></li>
+          <li class="navbar-item"><a href="#Contact" class="navbar-link">Contact</a></li>
+          <li><a class="nav-cta" href="signin.html">Signin</a></li>
+          <li><a class="nav-cta" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <form class="search-container" role="search" action="#" aria-label="Site search">
+      <label for="site-search" class="sr-only">Search the site</label>
+      <input id="site-search" name="q" type="search" placeholder="Search destinations, hotels, services..." class="search-input">
+      <button type="submit" class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+    </form>
+
+    <section class="home-banner" id="Home">  
+     <div class="slider">
+            <img src="Images/7wonders.jpg" alt="" class="active">
+            <img src="./Images/tajmahal.jpg" alt="" >
+            <img src="./Images/Chichen_itza.jpg" alt="">
+            <img src="./Images/Colosseum.jpg" alt="">
+            <img src="./Images/the great wall of china.jpg" alt="">
+            <img src="./Images/christ-the-redeemer.jpg" alt="">
+            <img src="./Images/macchu picchu.jpg" alt="">
+            <img src="./Images/petra.jpg" alt="">
+     </div>
+    </section>
+    <div class="card-container" id="Services">
+      <a class="card-item" href="hotel.html" aria-label="Hotels"><img src="./Images/hotel_42dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg" alt="Hotel icon"><h1>Hotels</h1></a>
+      <a class="card-item" href="travel.html" aria-label="Travel"><img src="./Images/flight_42dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg" alt="Travel icon"><h1>Travel</h1></a>
+      <a class="card-item" href="entertainment.html" aria-label="Entertainment"><img src="./Images/attractions_44dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="Entertainment icon"><h1>Entertainment</h1></a>
+      <a class="card-item" href="culture.html" aria-label="Culture"><img src="./Images/temple_buddhist_44dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" alt="Culture icon"><h1>Culture</h1></a>
+
+    </div>
+
+    <section class="home-content">
+    <div class="quote">
+        <h1 style="margin-top: 10%;">“Traveling it leaves you speechless, then turns you into a storyteller.”</h1> <br>
+        <h1 style="text-align: right;"> -Ibn Battuta</h1>
+    </div>
+    <div class="image">      
+        <video src="./videos/homevid.mp4" autoplay loop muted>
+        </video>
+    </div>
+    </section>
+
+    <section class="cities-section" id="Cities">
+         <h1>Explore The cities</h1>
+        <div class="grid-cities">
+        <div class="grid-item"> <img src="./Images/banglore.webp" alt=""><h1>Banglore</h1></div>
+        <div class="grid-item"> <img src="./Images/Pune.webp" alt=""><h1>Pune</h1> </div>
+        <div class="grid-item"> <img src="./Images/goa.jpeg" alt=""><h1>Goa</h1></div>
+        <div class="grid-item"> <img src="./Images/mumbai.jpg" alt="" ><h1>Mumbai</h1></div>
+        <div class="grid-item"> <img src="./Images/nagpur.jpg" alt=""><h1>Nagpur</h1></div>
+        <div class="grid-item"> <img src="./Images/hyderabad.jpg" alt=""><h1>Hyderabad</h1></div>
+        <div class="grid-item"> <img src="./Images/indore.jpg" alt=""><h1>Indore</h1> </div>
+        <div class="grid-item"> <img src="./Images/Ahmedabad.jpg" alt=""><h1>Ahmedabad</h1></div>
+        <div class="grid-item"> <img src="./Images/delhi.jpg" alt=""><h1>Delhi</h1></div>
+        <div class="grid-item"> <img src="./Images/kolkata.jpg" alt=""><h1>Kolkata</h1></div>
+        </div>
+    </section>
+
+    <section class="about-section" id="About">
+        <h1>Why To Choose Us</h1>
+        Choosing us means embarking on a journey that is tailored entirely to your needs and preferences. We specialize in creating personalized travel plans that go beyond the ordinary, combining expert local insights with seamless booking experiences so you can focus on enjoying your adventure. With our 24/7 support, you’ll travel with complete peace of mind, knowing help is always just a call away. We also guarantee the best prices by comparing trusted providers, ensuring you get maximum value without compromise. And because we care about the planet as much as we care about your journey, we offer eco-friendly options that let you explore responsibly. With us, every trip becomes more than just a vacation—it’s an unforgettable experience designed around you.
+    </section>
+
+
+  <section class="contact" id="Contact">
+    <div class="contact-container">
+      <h2>📞 Contact Us</h2>
+      <p>
+        We're here to make your travel planning effortless and enjoyable. 
+        Whether you have questions about destinations, need help customizing your itinerary, 
+        or simply want expert advice, our team is always ready to assist.
+      </p>
+
+      <div class="contact-flex">
+
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> dreamtravelplanar@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> +91 76669 48588</p>
+          <p>
+            <i class="fas fa-share-alt"></i> Follow Us: 
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a> | 
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a> | 
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="web.js"></script>
+</body>
+</html>
